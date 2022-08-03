@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CANVAS</title>
+<style>
+body{   width:960px;
+            margin:0 auto;}
+h1{     text-align:center;}
+#miCanvas{  border:dotted 2px yellow;
+                background:blue;   }
+</style>
+<script>
+var canvas, ctx;
+var x, y;
+// FUNCION RECURSIVA - SE LLAMA A SI MISMA
+function anima(){
+    requestAnimationFrame(anima);
+    verifica();
+    pinta();
+}
+function verifica(){
+    x+=0.1;   
+    if(x>canvas.width) x = 1;
+}
+function pinta(){
+    ctx.clearRect(0,0,canvas.width, canvas.height);
+    console.log(x);
+    ctx.fillStyle = "white";
+    ctx.beginPath();
+    ctx.arc(x,100,5,0,2*Math.PI);
+    ctx.fill(); 
+}
+// FUNCION NATIVA DE JAVA QUE SE UTILIZA EN CANVAS - PRINCIPIO DE MOVIMIENTO
+window.requestAnimationFrame=(function(){
+    return window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            function(callback){window.setTimeout(callback,17);}
+})();
+window.onload = function(){
+    canvas = document.getElementById("miCanvas");
+    if(canvas && canvas.getContext){
+        ctx = canvas.getContext("2d");
+        if(ctx){
+            x = 100;
+            y = 100;
+             anima();
+        } else {
+            alert("Error al crear tu contexto");    
+        }
+    }
+}
+</script>
+</head>
+<body>
+<h1>Unidad_2_1</h1>
+<canvas id="miCanvas" width="960px" height="500px">
+Tu navegador no soporta CANVAS
+</canvas>
+</body>
+</html>

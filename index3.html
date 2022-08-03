@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NOOMBRE</title>
+<style>
+#miCanvas{  border:dotted 15px RED;
+                background:blue;   }
+</style>
+<script>
+window.onload = function(){
+    var canvas = document.getElementById("miCanvas");
+    if(canvas && canvas.getContext){
+        var ctx = canvas.getContext("2d");
+        if(ctx){
+            //Descripcion de lineas
+            ctx.lineWidth = 15;
+            ctx.strokeStyle = "YELLOW";
+            //Dibujamos lineas
+            ctx.beginPath();
+            ctx.moveTo(40,50);
+            ctx.moveTo(40,50);
+			ctx.lineCap = "round";
+ //           ctx.lineTo(300,50);
+  // lado de arriba de la J
+            ctx.lineTo(90,50);
+            ctx.stroke();
+            //Segunda linea
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//            ctx.moveTo(50,100);
+//          LA SEGUNDA ES LA DISTANCIA DESDE ARRIBA
+            ctx.moveTo(65,50);
+            ctx.lineTo(65,100);
+            ctx.stroke();
+            //Tercer linea
+            ctx.beginPath();
+            ctx.lineCap = "round";
+            ctx.moveTo(40,100);
+            ctx.lineTo(65,100);
+            ctx.stroke();
+
+            //Cuarta linea
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_DER Y S_D_ARRIBA
+            ctx.moveTo(120,100);
+			// P=D_DER   - S=D_ARRIBA
+            ctx.lineTo(120,50);
+            ctx.stroke();			
+			
+			
+			// 	quinta linea   BASE DE LA U
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(150,100);
+// 			P=D_DER   - S=D_ARRIBA
+            ctx.lineTo(120,100);
+            ctx.stroke();
+
+
+			// 	SEXTA linea  DERECHA DE LA U 
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(150,100);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(150,50);
+            ctx.stroke();
+
+
+			// 	SEXTA linea  IZQUIERDA DE LA A
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(180,100);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(180,50);
+            ctx.stroke();
+
+
+			// 	SEPTIMA linea  DERECHA DE LA A
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(230,100);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(230,50);
+            ctx.stroke();
+			
+			
+            // OCTAVA LINEA SUPERIOR DE LA A
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(180,50);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(230,50);
+            ctx.stroke();		
+			
+			
+            // OCTAVA LINEA MEDIA DE LA A
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(180,80);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(230,80);
+            ctx.stroke();		
+			
+            // NOVENA LINEA IZQUIERDA DE LA N
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(260,50);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(260,100);
+            ctx.stroke();		
+			
+			
+            // DECIMA LINEA DERECHA DE LA N
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(320,50);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(320,100);
+            ctx.stroke();		
+
+            // LINEA ONCE OBLICUA DE LA N
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(260,50);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(320,100);
+            ctx.stroke();		
+			
+
+
+//      AQUI COMIENZA EL NOMBRE CARLOS
+
+			// 	DOCE linea  IZQUIERDA DE LA C
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(50,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(50,200);
+            ctx.stroke();
+
+            // TRECE LINEA SUPERIOR DE LA C
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(50,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(90,150);
+            ctx.stroke();		
+
+            // CATTORCE LINEA INFERIOR DE LA C
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(50,200);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(90,200);
+            ctx.stroke();		
+
+//////  LA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+			// 	15 linea  IZQUIERDA DE LA A
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(120,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(120,200);
+            ctx.stroke();
+
+
+			// 	16 linea  DERECHA DE LA A
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(170,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(170,200);
+            ctx.stroke();
+			
+			
+            // 17 LINEA SUPERIOR DE LA A
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(120,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(170,150);
+            ctx.stroke();		
+			
+			
+            // 18 LINEA MEDIA DE LA A
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(120,180);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(170,180);
+            ctx.stroke();		
+			
+
+			// 	19 linea  IZQUIERDA DE LA R
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(200,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(200,200);
+            ctx.stroke();				
+
+//   LIENA 20 REDONDO DE LA R	
+
+            //Tercer arco
+            ctx.beginPath();
+            ctx.arc(215,160,15, 0, 2*Math.PI,true);
+            ctx.stroke();		
+
+// 	21 linea  OBLICUA DE LA R
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(200,170);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(230,200);
+            ctx.stroke();				
+
+			// 	22 linea  IZQUIERDA DE LA L
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(250,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(250,200);
+            ctx.stroke();				
+
+            // 23 LINEA BAJA DE LA L
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(250,200);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(270,200);
+            ctx.stroke();	
+
+			//   LIENA 24 LA O
+
+            ctx.beginPath();
+            ctx.arc(310,170,27, 0, 2*Math.PI,true);
+            ctx.stroke();		
+			
+/////////////////// LA SSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+
+			// 	25 linea  IZQUIERDA DE LA S
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(360,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(360,175);
+            ctx.stroke();
+
+
+			// 	26 linea  DERECHA DE LA S
+            ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(400,175);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(400,200);
+            ctx.stroke();
+			
+			
+            // 27 LINEA SUPERIOR DE LA S
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(360,150);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(400,150);
+            ctx.stroke();		
+			
+			
+            // 28 LINEA MEDIA DE LA S
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(360,175);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(400,175);
+            ctx.stroke();		
+			
+
+            // 29 LINEA BAJA DE LA S
+			ctx.beginPath();
+            ctx.lineCap = "round";
+//          P=D_H_DER Y S_D_ARRIBA
+            ctx.moveTo(360,200);
+// 			P=D_DER DE ARRIBA   - S=D_ARRIBA
+            ctx.lineTo(400,200);
+            ctx.stroke();		
+
+
+
+
+
+
+			
+
+			} else {
+            alert("Error al crear tu contexto");    
+        }
+    }
+	
+	
+	
+	
+	
+	
+	           var imagen = new Image();
+            //
+            function procesaImagen(){
+                ctx.drawImage(imagen,470,0);         
+            }
+            //
+            imagen.src = "grito.jpg";
+            imagen.onload = function(e){
+                procesaImagen();
+            }
+	
+	
+	
+	
+	
+	
+	
+	
+}
+</script>
+</head>
+<body>
+<h1>**********************************************</h1>
+<h1>EL JUEGO DE LAS MULTIPLICACIONES</h1>
+	
+
+<a href="new16.html">CLIC AQUÍ PARA COMENZAR EL JUEGO</a>
+<h1>**********************************************</h1>
+<canvas id="miCanvas" width="700px" height="300px">
+Tu navegador no soporta CANVAS
+</canvas>
+</body>
+
+</html>
